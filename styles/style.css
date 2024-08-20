@@ -139,7 +139,6 @@
 @media (width <768px) {
   
   .page {
-    --footer-height: 667px;
     --gap: 10px;
   }
   
@@ -204,6 +203,10 @@
     grid-column-start: 1;
     grid-column-end: 4;
   }
+
+  .footer-title {
+    font-size: clamp(7.5rem, 5.2934rem + 9.4148vw, 9.8125rem);
+  }
 }
 
 @media (width >=1024px) {
@@ -260,7 +263,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  height: var(--footer-height);
+  height: 100vh;
   align-items: center;
   color: var(--title-color);
   font-family: 'IBM Plex Mono', sans-serif;
@@ -268,6 +271,3 @@
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
 }
 
-.footer-title {
-  max-width: calc(100%-(var(--gap))*2);
-}
