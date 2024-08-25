@@ -67,7 +67,6 @@
 .header__theme-menu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   grid-row-start: 1;
   grid-row-end: 2;
   align-self: end;
@@ -76,11 +75,12 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-
+  gap: 10px;
 }
 
 .header__theme-menu-item {
   list-style-type: none;
+  border: 1px solid transparent;
 }
 
 .header__theme-menu-button {
@@ -156,6 +156,7 @@
   
   .main-title {
     font-size: clamp(7.25rem, 5.0536rem + 9.9274vw, 9.8125rem);
+    line-height: 95.7px;
   }
 
   .footer-title {
@@ -189,7 +190,6 @@
     display: grid;
     grid-template-rows: 23.4px auto;
   }
-  
 
   .gallery {
     display: grid;
@@ -250,7 +250,6 @@
   padding: var(--gap);
 }
 
-
 .content__section-title {
   color: var(--heading-color);
   font-family: 'IBM Plex Mono', sans-serif;
@@ -264,13 +263,14 @@
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   line-height: 23.4px;
+  margin-bottom: 10px;
 }
 
 .tip-title {
   grid-column-start: 2;
   grid-column-end: 4;
   line-height: 23.4px;
-  height: 23.4px;
+  min-height: 23.4px;
 }
 
 .content-text {
